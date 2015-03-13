@@ -1,0 +1,27 @@
+// Descriminando_el0.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include<iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "ingrese un numero: " << endl;
+	cin >> a;
+	if (a==0) {
+		cout << "no se toma en cuenta el 0" << endl;
+	} else {
+		if (a>0) {
+			cout << "es postivo el numero: " << a << endl;
+		} else {
+			cout << "es negativo el numero: " << a << endl;
+		}
+	}
+	getch();
+	return 0;
+}
+
+
+
