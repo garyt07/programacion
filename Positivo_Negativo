@@ -1,0 +1,21 @@
+// Positivo_negativo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include<iostream>
+using namespace std;
+
+
+int main() {
+	int a;
+	cout << "ingrese un numero: " << endl;
+	cin >> a;
+	if (a>0) {
+		cout << "es positivo" << endl;
+	} else {
+		cout << "es negativo" << endl;
+	}
+	getch();
+	return 0;
+}
