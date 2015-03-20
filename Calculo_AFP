@@ -1,0 +1,27 @@
+/* calculo de afp.cpp : Defines the entry point for the console application.
+    autor: GARY TALAVERA       */
+
+#include "stdafx.h"
+#include "conio.h"
+
+#include<iostream>
+using namespace std;
+
+
+
+int main() {
+	float afp,min,sueldo;
+	
+	cout << "ingrese salario min: " << endl;
+	cin >> min;
+	cout << "ingrese sueldo:" << endl;
+	cin >> sueldo;
+	if (sueldo>=min*2) {
+		afp = sueldo*0.15;
+	} else {
+		afp = sueldo*0;
+	}
+	cout << "la cantidad de AFP es:" << afp << endl;
+	getch();
+	return 0;
+}
