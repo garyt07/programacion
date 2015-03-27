@@ -1,0 +1,29 @@
+/* promedio de 3 valores.cpp : Defines the entry point for the console application.
+ autor: Gary Talavera*/
+
+#include "stdafx.h"
+#include"conio.h"
+#include<iostream>
+using namespace std;
+
+int main() {
+	float a,b,c,p;
+	cout << "ingrese 3 numeros:" << endl;
+	cin >> a >> b >> c;
+	if (a>=0 && a<=10) {
+		if (b>=0 && b<=10) {
+			if (c>=0 && c<=10) {
+				p = (a+b+c)/3;
+				cout << "el promedio es de:" << p << endl;
+			} else {
+				cout << "no se puede calcular el promedio por que el numero errado es:" << c << endl;
+			}
+		} else {
+			cout << "no se puede calcular el promedio por que el numero errado es:" << b << endl;
+		}
+	} else {
+		cout << "no se puede calcular el promedio por que el numero errado es:" << a << endl;
+	}
+	getch();
+	return 0;
+}
